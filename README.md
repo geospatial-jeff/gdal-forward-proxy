@@ -1,6 +1,6 @@
-# gdal-reverse-proxy
+# gdal-forward-proxy
 
-A HTTP reverse-proxy which provides a distributed caching layer for GDAL-based applications with remote data access, ideal for cloud optimized data formats (ex. COG) which are commonly accessed via HTTP range requests.  This project uses [groupcache](https://github.com/golang/groupcache) for distributed cache filling across potentially multiple peers.  This simplifies the deployment of the cache and lets us support large cache sizes by scaling peers horizontally across potentially multiple underlying nodes.
+A HTTP forward proxy which provides a distributed caching layer for GDAL-based applications with remote data access, ideal for cloud optimized data formats (ex. COG) which are commonly accessed via HTTP range requests.  This project uses [groupcache](https://github.com/golang/groupcache) for distributed cache filling across potentially multiple peers.  This simplifies the deployment of the cache and lets us support large cache sizes by scaling peers horizontally across potentially multiple underlying nodes.
 
 <p align="center">
     <img src="./assets/concept-diagram.png" width="500">
